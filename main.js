@@ -38,7 +38,7 @@ function clearGridBtn(){
     delBtn.addEventListener("click",()=>{
         const squares = document.querySelectorAll(".square");
         squares.forEach((square) => {
-            square.classsList.remove("filled");
+            square.classList.remove("filled");
         });
     });
 }
