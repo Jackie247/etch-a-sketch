@@ -32,6 +32,9 @@ body{
     width:500px;
 }
 
+.btnContainer{
+    margin-top: 25px;
+}
 .square{
     border:solid #dbdbdbaa 1px;
 }

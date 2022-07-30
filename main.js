@@ -9,9 +9,9 @@ function startPage(){
 function createGridBtn(){
     const newGridButton = document.querySelector('.newGridBtn');
     newGridButton.addEventListener('click',()=>{
-        let size = prompt("Enter size of grid: ");
-        while(size > 100 || size < 1){
-            size = prompt("Enter size of grid: ");
+        let size = prompt("Enter size of grid between 16 and 100: ");
+        while(size > 100 || size < 16){
+            size = prompt("Enter size of grid between 16 and 100: ");
         }
         createGrid(size);
     });
