@@ -1,13 +1,13 @@
 function startPage(){
-    initPageFunctions();
-}
-
-function initPageFunctions(){
     // Button Functions
     createGridBtn();
     clearGridBtn();
     // Grid Functions
-    turnSqBlackOnHover();
+    createGrid(16);
+}
+
+function initPageFunctions(){
+
 }
 function createGridBtn(){
     const newGridButton = document.querySelector('.newGridBtn');
@@ -33,13 +33,12 @@ function createGrid(size){
         alert("Grid already exists, clear first!");
         return -1;
     }
-    for(let rows = 0; rows < size; rows++){
-        for(let columns = 0; columns < size; columns++){
-            const square = document.createElement('div');
-            square.classList.add("square");
-            gridContainer.appendChild(square);
-        }
+    for(let rows = 0; rows < size * size; rows++){
+        const square = document.createElement('div');
+        square.classList.add("square");
+        gridContainer.appendChild(square);
     }
+    turnSqBlackOnHover();
 }
 
 function clearGridBtn(){
