@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: repeat(16,25px [col-start]);
+    border:solid red 10px;
+
+}
+
+.square{
+    border:solid grey 1px;
+    height:20px;
+    width:20px;
+}
