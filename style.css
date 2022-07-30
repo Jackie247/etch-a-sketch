@@ -21,25 +21,27 @@ body{
 .main{
     display:flex;
     flex-flow:column wrap;
-    margin: 0 150px;   
     align-items:center;
 }
 
 .gridContainer{
     display:grid;
-    grid-template-columns: repeat(16,1fr);
-    grid-template-rows: repeat(16,1fr); 
     background-color: #fff;
     border:solid black 1px;
-    height:400px;
-    width:400px;
+    height:500px;
+    width:500px;
 }
 
 .square{
-    border:solid grey 1px;
+    border:solid #dbdbdbaa 1px;
+}
+
+.filled{
+    background-color: black;
 }
 /* Bottom section of page, additional info */
 .bottom{
 
 }
+
 
